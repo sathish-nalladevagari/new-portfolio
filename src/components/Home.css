@@ -1,0 +1,236 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color for the blocks */
+.block {
+  
+  flex-grow: 1;
+}
+
+.small {
+  display: flex;
+  min-height: 40rem;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.large {
+  
+  min-height: 40rem;
+  display: grid;
+  place-items: center;
+  flex-grow: 2;
+}
+
+/* Style the homepage container */
+.homepage {
+  display: flex;
+  height: 100vh !important;
+  overflow: hidden;
+  justify-content: space-between;
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.name {
+  border-radius: 10px;
+  background: #ffff;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  width: 12rem;
+  max-height: 5rem;
+  position: relative;
+  left: 15rem;
+  top: 5rem;
+  padding: 10px 5px;
+}
+
+/* Add this CSS for the circular image background */
+.profile-image {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profession {
+  border-radius: 10px;
+  background: #ffff;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  width: 12rem;
+  max-height: 5rem;
+  position: relative;
+  left: 13rem;
+  top: 10rem;
+  padding: 15px 10px;
+}
+
+/* Set the background color to pale blue and make the section full-screen */
+.homepage {
+  background-color: #F3FCF0;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Style the content within the homepage section */
+.homepage h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.homepage p {
+  font-size: 0.8rem;
+  color: #272323;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .homepage {
+    
+    height: 100vh !important;
+    
+   
+  }
+  .homepage h1 {
+    font-size: 1rem;
+  }
+
+  .homepage p {
+    font-size: 0.7rem;
+  }
+
+  .name, .profession {
+    width: 50%; /* Make name and profession boxes full width on small screens */
+    left: 10px;
+    top: 10px; /* Reset left position */
+  }
+  .profession{
+    width: 50%;
+    top: 2rem;
+    left: 4rem;
+
+  }
+  .profile-image {
+    display: flex;
+   
+    width: 50%;
+    height: 50%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+   width: 50%;
+    border-radius: 50%;
+  }
+  .small {
+    display: flex;
+    
+    min-height: 10rem;
+    flex-direction: column;
+    z-index: 1;
+  }
+  
+  .large {
+   
+    min-height: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    
+    flex-grow: 2;
+  }
+  .small-image-container {
+    width: 50px !important;
+    height: 50px !important;
+    
+    background: #ffff;
+    box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+    border-radius: 50%; /* Make them circular */
+    margin: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .small-image-container img {
+   width: 50%;
+    object-fit: cover;
+  }
+  .node {
+    position: relative;
+    left: 5rem !important;
+  }
+  
+  .react {
+    position: relative;
+    left: 1rem !important;
+    top: -10rem !important;
+  }
+  
+  .net {
+    position: relative;
+    left: 20rem !important;
+    bottom: 20rem !important;
+  }
+  .python{
+    position: relative;
+    left: 16rem !important;
+    bottom: 15rem !important;
+
+  }
+  
+}
+
+/* Style for small image containers */
+.small-image-container {
+  width: 100px;
+  height: 100px;
+  background: #ffff;
+  box-shadow: 0 1px 25px rgba(0,0,0,0.2);
+  border-radius: 50%; /* Make them circular */
+  margin: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.small-image-container img {
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* Make the image fill the container height */
+  object-fit: cover;
+}
+
+.node {
+  position: relative;
+  right: 2rem;
+}
+
+.react {
+  position: relative;
+  left: 4rem;
+  top: 4rem;
+}
+
+.net {
+  position: relative;
+  right: 10rem;
+}

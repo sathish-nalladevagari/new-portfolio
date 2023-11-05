@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the background color to pale blue and make the section full-screen */
+.about-me {
+  background-color: #F3FCF0; /* Pale blue color */
+  height: 100vh; /* 100% of the viewport height */
+  width: 100%; /* 100% of the viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+  padding: 20px 0;
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+}
+
+/* Style the content within the About Me section */
+.about-me h2 {
+  font-size: 1rem;
+  color: #333; /* Text color */
+  margin: 0;
+}
+
+.about-me p {
+  font-size: 0.9rem;
+  color: #666; /* Text color */
+  margin: 10px; /* Add spacing between elements */
+}
+
+.about-head {
+  padding: 10px 5px;
+}
+
+/* Center the h1 at the top */
+.about-me h1 {
+  font-size: 2rem;
+  color: #333; /* Text color */
+  margin: 0;
+}
+
+/* Style the card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Adjust the gap between cards */
+  margin-top: 2rem; /* Add space from the content above */
+  margin-bottom: 2rem; /* Add space from the content below */
+}
+
+/* Style the cards */
+.card {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px; /* Add spacing between cards */
+  text-align: center; /* Center card content horizontally */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Make the cards responsive */
+@media (max-width: 768px) {
+  .about-me {
+    background-color: #fff !important; /* Pale blue color */
+    height: fit-content !important; /* 100% of the viewport height */
+    width: 100%; /* 100% of the viewport width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    padding: 20px 0;
+    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  }
+  .about-me h1 {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    font-weight: bold;
+    
+  }
+
+  .about-me h2 {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+
+  .about-me p {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  .card {
+    width: 70%;
+  }
+}

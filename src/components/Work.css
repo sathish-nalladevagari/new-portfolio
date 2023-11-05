@@ -1,0 +1,106 @@
+/* Set the background color to a pale blue and make the section full-screen */
+.work {
+  background-color: #fff;
+  height: 100vh; /* Adjusted for responsive design */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the content within the Work section */
+.work h2 {
+  font-size: 1rem !important;
+  font-weight: bold;
+  color: #333;
+  font-size: medium;
+  font-style: oblique;
+  margin: 0;/* Use your desired font */
+}
+
+.work p {
+  font-size: 0.6rem !important;
+  color: #666;
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .work h2 {
+    font-size: 1.5rem;
+  }
+
+  .work p {
+    font-size: 1rem;
+  }
+}
+
+/* Style for the portfolio section */
+.portfolio {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Style for the technology options */
+.technology-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Use your desired font size */
+}
+
+/* Style for the projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.project {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  
+}
+
+/* Make the projects expandable */
+.project.expanded {
+  display: block;
+}
+
+.image {
+  width: 70%;
+  height: 50%;
+  background-size: contain;
+  padding: 10px;
+  
+  border-radius: 5px;
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tech-button {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+  .work{
+    height: fit-content !important;
+  }
+}
